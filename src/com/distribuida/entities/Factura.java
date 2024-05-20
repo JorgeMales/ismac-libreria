@@ -13,7 +13,7 @@ public class Factura {
 	private Cliente cliente;
 	
 	public Factura () {}
-
+	//Contructor
 	public Factura(int idFactura, String numFactura, Date fecha, double totalNeto, double iva, double total) {
 		
 		this.idFactura = idFactura;

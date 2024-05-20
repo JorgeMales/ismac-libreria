@@ -12,7 +12,7 @@ public class Cliente {
 	
 	
 	public Cliente() {}
-	
+	//Contructor
 	public Cliente(int idCliente, String cedula, String nombre, String apellido, String direccion, String telefono,
 			String correo) {
 		

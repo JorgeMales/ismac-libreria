@@ -11,7 +11,7 @@ public class FacturaDetalle {
 	//private int idLibro;
 	
 	public FacturaDetalle() {}
-
+	//Contructor
 	public FacturaDetalle(int idFacturaDetalle, int cantidad, double subTotal) {
 	
 		this.idFacturaDetalle = idFacturaDetalle;

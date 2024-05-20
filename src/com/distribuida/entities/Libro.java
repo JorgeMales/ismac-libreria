@@ -23,7 +23,7 @@ public class Libro {
 	private Autor autor;
 	
 	public Libro () {}
-
+	//Contructor
 	public Libro(int idLibro, String titulo, String editorial, int numPaginas, String edicion, String idioma,
 			Date fechaPublicacion, String descripcion, String tipoPasta, String isbn, int numEjemplares, String portada,
 			String presentacion, double precio) {
