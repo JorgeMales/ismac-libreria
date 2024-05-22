@@ -62,6 +62,8 @@ public class FacturaDetalle {
 	public void setLibro(Libro libro) {
 		this.libro = libro;
 	}
+	
+	//CONTRUCTOR
 
 	@Override
 	public String toString() {
