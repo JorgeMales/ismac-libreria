@@ -6,7 +6,7 @@ public class Categoria {
 	private String categoria;
 	private String descripcion;
 	
-	//Contructor
+	
 	public Categoria () {}
 
 	public Categoria(int idCategoria, String categoria, String descripcion) {
