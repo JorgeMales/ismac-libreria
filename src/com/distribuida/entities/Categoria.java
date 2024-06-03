@@ -1,5 +1,8 @@
 package com.distribuida.entities;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Categoria {
 	//Atributos
 	private int idCategoria;
@@ -8,6 +11,7 @@ public class Categoria {
 	
 	
 	public Categoria () {}
+	//Contructor
 
 	public Categoria(int idCategoria, String categoria, String descripcion) {
 		
@@ -39,6 +43,7 @@ public class Categoria {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
+	//Strong
 
 	@Override
 	public String toString() {
