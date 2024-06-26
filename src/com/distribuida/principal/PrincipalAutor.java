@@ -20,7 +20,6 @@ public class PrincipalAutor {
 	autores.forEach(item -> {
 		System.out.println(item.toString());
 	});
-	
 	context.close();
 			
 
