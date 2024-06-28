@@ -21,7 +21,7 @@ public class AutorDAOImpl2 implements AutorDAO {
 	//findOne
 	//SELECT au FROM Autor au Where au.idAutor =: keyIdAutor
 	//add
-	//INSERT INTO Autor(...) VAlUES (..)?? No es permietido en HQL
+	//INSERT INTO Autor(...) VAlUES (..)?? No es permirtido en HQL
 	
 	
 	@Autowired

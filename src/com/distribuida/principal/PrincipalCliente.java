@@ -22,12 +22,12 @@ public class PrincipalCliente {
 	//
 	
 	//add
-	Cliente Cliente = new Cliente(0,"1753653490","Juan", "Taipe","av. por ahi....","097623456","jtaipe@correo.com");
-	//ClienteDAO.add(Cliente);
+	Cliente cliente = new Cliente(0,"1753653490","Juan", "Taipe","av. por ahi....","097623456","jtaipe@correo.com");
+	ClienteDAO.add(cliente);
 	
 	//up
-	Cliente Cliente2 = new Cliente(40,"17536534902","Juan2", "Taipe2","av. por ahi....2","0976234562","jtaipe2@correo.com");
-	//ClienteDAO.up(Cliente2);
+	Cliente cliente2 = new Cliente(40,"17536534902","Juan2", "Taipe2","av. por ahi....2","0976234562","jtaipe2@correo.com");
+	//ClienteDAO.up(cliente2);
 	
 	//del
 	ClienteDAO.del(40);
