@@ -1,14 +1,38 @@
 package com.distribuida.entities;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
 import org.springframework.stereotype.Component;
 
 @Component
+@Entity
+@Table(name="FacturaDetalle")
 public class FacturaDetalle {
-
+    // Atributos 
+	@Id 
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	@Column(name="idFacturaDetalle")
 	private int idFacturaDetalle;
+	@Column(name="cantidad")
 	private int cantidad;
+	@Column(name="subtotal")
 	private double subTotal;
+	
+	//Implementación de los foreyn key 
+	@JoinColumn(name="id_factura")
+	@ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
 	private Factura factura;
+	
+	@JoinColumn(name="id_libro")
+	@ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
 	private Libro libro;
 	//private int idFactura;
 	//private int idLibro;
@@ -47,7 +71,6 @@ public class FacturaDetalle {
 	public void setSubTotal(double subTotal) {
 		this.subTotal = subTotal;
 	}
-
 
 
 	public Factura getFactura() {

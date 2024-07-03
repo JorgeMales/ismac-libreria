@@ -22,7 +22,7 @@ public class PrincipalFactura {
 		//add
 		Factura factura = new Factura(0,"FAC-0090",new Date(),60.63,15.36,76.35);
 		factura.setCliente(clienteDAO.findOne(1));
-		//facturaDAO.add(factura);
+		facturaDAO.add(factura);
 		
 		//up
 		Factura factura2 = new Factura(86,"FAC-0091",new Date(),60.632,15.362,76.352);

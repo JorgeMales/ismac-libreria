@@ -23,7 +23,7 @@ public class PrincipalAutor2 {
 	
 	//add
 	Autor autor = new Autor(0,"Juan", "Taipe","Ecuador","av. por ahi....","097623456","jtaipe@correo.com");
-	//autorDAO.add(autor);
+	autorDAO.add(autor);
 	
 	//up
 	Autor autor2 = new Autor(54,"Juan2", "Taipe2","Colombia","av. por ahi....2","0976234562","jtaipe2@correo.com");

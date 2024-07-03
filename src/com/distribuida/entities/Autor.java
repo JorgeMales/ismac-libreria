@@ -46,9 +46,6 @@ public class Autor {
 	}
 
 	
-	
-	
-	
 	public int getIdAutor() {
 		return idAutor;
 	}
