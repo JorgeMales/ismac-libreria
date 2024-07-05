@@ -14,12 +14,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table(name="FacturaDetalle")
+@Table(name="factura_detalle")
 public class FacturaDetalle {
     // Atributos 
 	@Id 
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	@Column(name="idFacturaDetalle")
+	@Column(name="id_factura_detalle")
 	private int idFacturaDetalle;
 	@Column(name="cantidad")
 	private int cantidad;

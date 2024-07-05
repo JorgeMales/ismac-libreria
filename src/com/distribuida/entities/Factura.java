@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table(name="Factura")
+@Table(name="factura")
 public class Factura {
 	
 	//@OneToOne uno a uno 
