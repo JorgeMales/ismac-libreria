@@ -9,6 +9,7 @@ import com.distribuida.entities.Categoria;
 
 
 
+
 public class PrincipalCategoria {
 
 	public static void main(String[] args) {
@@ -20,15 +21,29 @@ public class PrincipalCategoria {
 			ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 			CategoriaDAO categoriaDAO = context.getBean("categoriaDAOImpl",CategoriaDAO.class);
 			
+			//CRUD : CREATE, READ, UPDATE, DELETE 
+			//
 			
-			List<Categoria> categorias = categoriaDAO.findAll();
+			//add
+			Categoria categoria = new Categoria(0,"Animado","Cuento infantil");
+			categoriaDAO.add(categoria);
 			
-			categorias.forEach(item -> {
-				System.out.println(item.toString());
-			});
+			//up
+			Categoria categoria2 = new Categoria(52,"Animado2","Cuento infantil2");
+			//CategoriaDAO.up(categoria2);
+			
+			//del
+			//CategoriaDAO.del(40);
+			System.out.println("**********************DEL***********************"+categoriaDAO.findOne(1));
+			//finAll
+			//List<Categoria> Categorias = CategoriaDAO.findAll();
+			
+			
+			categoriaDAO.findAll().forEach(item -> {System.out.println(item.toString());});
 			
 			context.close();
-			
-	}
+					
+
+			}
 
 }

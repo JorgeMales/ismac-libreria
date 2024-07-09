@@ -23,7 +23,7 @@ public class PrincipalCliente {
 	
 	//add
 	Cliente cliente = new Cliente(0,"1753653490","Juan", "Taipe","av. por ahi....","097623456","jtaipe@correo.com");
-	//ClienteDAO.add(cliente);
+	ClienteDAO.add(cliente);
 	
 	//up
 	Cliente cliente2 = new Cliente(40,"17536534902","Juan2", "Taipe2","av. por ahi....2","0976234562","jtaipe2@correo.com");
